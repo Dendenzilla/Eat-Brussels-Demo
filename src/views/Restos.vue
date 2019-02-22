@@ -149,7 +149,7 @@ export default {
   methods: {
     suppr() {
       axios.delete(
-        "http://labo-team4-bf.azurewebsites.net/api/restaurants/" +
+        "//labo-team4-bf.azurewebsites.net/api/restaurants/" +
           this.$route.params.id
           
       );alert("Restaurant supprimé");
@@ -158,7 +158,7 @@ export default {
   created() {
     axios
       .get(
-        "http://labo-team4-bf.azurewebsites.net/api/restaurants/" +
+        "//labo-team4-bf.azurewebsites.net/api/restaurants/" +
           this.$route.params.id
       )
       .then(response => {

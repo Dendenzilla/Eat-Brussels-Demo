@@ -96,7 +96,7 @@ export default {
     },
     methods: {
         post(){
-            axios.post("http://labo-team4-bf.azurewebsites.net/api/Restaurants", this.restaurant)
+            axios.post("//labo-team4-bf.azurewebsites.net/api/Restaurants", this.restaurant)
                 .then(response => {
                     this.restaurant.kitchenTypes = [''];
                     this.restaurant.name = '';

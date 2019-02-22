@@ -92,7 +92,7 @@ export default {
     },
     created(){
        axios
-      .get("http://labo-team4-bf.azurewebsites.net/api/restaurants/" + this.$route.params.id)
+      .get("//labo-team4-bf.azurewebsites.net/api/restaurants/" + this.$route.params.id)
       .then(response => {
         this.restaurant.kitchenTypes = [''];
         this.restaurant = response.data;
@@ -108,7 +108,7 @@ export default {
     },
     methods: {
         post(){
-            axios.put("http://labo-team4-bf.azurewebsites.net/api/Restaurants/" + this.$route.params.id, this.restaurant)
+            axios.put("//labo-team4-bf.azurewebsites.net/api/Restaurants/" + this.$route.params.id, this.restaurant)
                 .then(response => {
                     this.restaurant.kitchenTypes = [''];
                     this.restaurant.name = '';
@@ -118,7 +118,7 @@ export default {
                 })
         },
         rating(){
-            axios.put("http://labo-team4-bf.azurewebsites.net/api/Restaurants/" + this.$route.params.id, this.restaurant.averageRating)
+            axios.put("//labo-team4-bf.azurewebsites.net/api/Restaurants/" + this.$route.params.id, this.restaurant.averageRating)
                 .then(response => {
                     this.restaurant.averageRating = 1;
                     })

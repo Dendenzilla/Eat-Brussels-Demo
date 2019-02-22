@@ -20,7 +20,7 @@ export default {
     RestoListAdmin
   },
   created() {
-    axios.get("http://labo-team4-bf.azurewebsites.net/api/restaurants").then(response => {
+    axios.get("//labo-team4-bf.azurewebsites.net/api/restaurants").then(response => {
       this.restoAdmin = response.data;
     });
   }

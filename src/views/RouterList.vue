@@ -19,7 +19,7 @@ export default {
   },
   created(){
     axios
-      .get("http://labo-team4-bf.azurewebsites.net/api/restaurants?kitchenType=" + this.$route.params.kitchenType)
+      .get("//labo-team4-bf.azurewebsites.net/api/restaurants?kitchenType=" + this.$route.params.kitchenType)
         .then(response => {
            this.restoPerKitchenType = response.data  
         })
