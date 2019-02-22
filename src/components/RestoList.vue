@@ -48,7 +48,11 @@ h1 {
   padding-top: 70px;
 }
 .resto-list {
-  columns: 3;
+  display:grid;
+  margin:0 auto;
+  max-width:1050px;
+  grid-template-columns: 300px 300px 300px;
+  justify-content:space-between;
 }
 button {
   background: crimson;
@@ -61,7 +65,7 @@ button {
 }
 @media screen and (max-width: 1150px) {
   .resto-list {
-    columns: 2;
+    grid-template-columns: 300px 300px;
   }
   .resto-pref {
     padding-bottom: 70px;
@@ -74,7 +78,7 @@ button {
 }
 @media screen and (max-width: 770px) {
   .resto-list {
-    columns: 1;
+    grid-template-columns: 100%;
   }
   h1 {
     font-size: 1.6em;
